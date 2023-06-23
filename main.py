@@ -1,5 +1,3 @@
-BACKGROUND_COLOR = "#B1DDC6"
-
 import tkinter, pandas, random
 
 word_data = pandas.read_csv('data/french_words.csv')
@@ -27,7 +25,6 @@ def flip_card():
         big_ol_canvas.itemconfig(card_title, text = 'French')
         big_ol_canvas.itemconfig(card_word, text = current_words['French'])
         big_ol_canvas.itemconfig(big_ol_card, image = card_front_img)
-
 
 window = tkinter.Tk()
 window.title('Flashcards')
